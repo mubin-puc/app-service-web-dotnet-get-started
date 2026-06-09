@@ -13,7 +13,8 @@ on:
 jobs:
   build:
     name: Build and Package
-    runs-on: windows-latest
+    runs-on: self-hosted
+    
 
     steps:
     # 1. Check out the source code
