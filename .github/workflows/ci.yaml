@@ -39,7 +39,7 @@ jobs:
 
     # 6. Upload the built web package so it can be referenced by the deploy job
     - name: Upload Artifact for Deployment
-      uses: actions/abstract-uploader@v4
+      uses: actions/upload-artifact@v4
       with:
         name: webapp-package
         path: ${{ github.workspace }}\build-artifacts\*.zip
